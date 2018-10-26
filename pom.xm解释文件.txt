@@ -1,0 +1,21 @@
+*note.001:
+    Maven是基于项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的软件项目管理工具。
+    Maven 除了以程序构建能力为特色之外，还提供高级项目管理工具。
+*note.002:
+    IoC(inversion of control)控制反转，也就是说，控制权由对象转移，对象自己变成了被动的接受。
+    DI(dependency injection)依赖注入
+    AOP(aspect oriented programming)面向切面编程
+*note.003:
+    Logback是由log4j创始人设计。当前分成三个模块：logback-core,logback- classic和logback-access。logback-core是其它两个模块的基础模块。
+    由于Logback-classic依赖slf4j-api.jar和logback-core.jar，所以要把slf4j-api.jar、logback-core.jar、logback-classic.jar，添加到要引入Logbac日志管理的项目的class path中.
+*note.004:
+    curator是zookeeper中的类似于guava对于java的意义一样，提供了丰富的封装，异常处理，
+    提供了fluent编程模型，提供了master选举，分布式锁，分布式基数，分布式barrier，可以很方便的为日常生产所使用。
+*note.005:
+    建立管理长连接、推送、通知、数据传输、自定义协议等等
+*note.006:
+*note.007:
+*note.008:
+*note.009:
+*note.010:
+*note.011:

@@ -9,5 +9,38 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+
+        <!--项目依赖的源码编码及输出编码 UTF-8-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!--jdk及maven(*note.001)版本-->
+        <jdk.version>1.8</jdk.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <jdk.encoding>UTF-8</jdk.encoding>
+        <!-- 代码检查checkstyle 及 bug检索findbugs 版本-->
+        <maven.checkstyle.plugin.version>2.17</maven.checkstyle.plugin.version>
+        <checkstyle.version>8.12</checkstyle.version>
+        <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
+        <maven.pmd.plugin.version>3.8</maven.pmd.plugin.version>
+
+        <!-- https://spring.io/projects/spring-boot#learn -->
+        <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
+        <!-- 跟随spring-boot升级 spring-core：spring框架中最低层核心的模块。提供了最基本的Ioc(*note.002)思想框架-->
+        <spring.version>5.0.7.RELEASE</spring.version>
+        <!-- 跟随spring-boot升级 logback-core:开源日志组件(*note.003)-->
+        <logback.version>1.2.3</logback.version>
+        <!-- https://github.com/apache/incubator-dubbo/releases 分布式服务框架-->
+        <dubbo.version>2.6.2</dubbo.version>
+        <!-- 跟随dubbo升级的 zookeeper -->
+        <!--<zkclient.version>0.10</zkclient.version>-->
+        <!--curator：分布式互斥锁(*note.004) -->
+        <curator.version>2.12.0</curator.version>
+        <!-- 跟随spring-boot升级 netty-all (*note.005)-->
+        <netty.version>4.1.25.Final</netty.version>
+
+
+    </properties>
+
 </project>
