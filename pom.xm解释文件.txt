@@ -12,10 +12,45 @@
     curator是zookeeper中的类似于guava对于java的意义一样，提供了丰富的封装，异常处理，
     提供了fluent编程模型，提供了master选举，分布式锁，分布式基数，分布式barrier，可以很方便的为日常生产所使用。
 *note.005:
-    建立管理长连接、推送、通知、数据传输、自定义协议等等
+    netty-all建立管理长连接、推送、通知、数据传输、自定义协议等等
+    Netty是一个异步通信、事件驱动基于NIO编写的高性能高并发的java网络编程框架。
+    参考文档地址：https://blog.csdn.net/luo4105/article/details/73817616?locationNum=2&fps=1
 *note.006:
+    数据库连接池,用以存储账号密码等安全性较高的
+    参考文档地址：http://www.cnblogs.com/niejunlei/p/5977895.html
 *note.007:
+    1、Json已经成为当前服务器与 WEB 应用之间数据传输的公认标准，Java 中常见的 Json 类库有 Gson、JSON-lib 和 Jackson 等。
+       jackson-core提供JsonParser和JsonGenerator可以实现基本的序列化和反序列化
+       参考文档地址：https://blog.csdn.net/u011499747/article/details/78760405
+    2、fastJson对于json格式字符串的解析主要用到了一下三个类：
+       JSON：fastJson的解析器，用于JSON格式字符串与JSON对象及javaBean之间的转换。
+       JSONObject：fastJson提供的json对象。
+       JSONArray：fastJson提供json数组对象。
+    3、GSON是Google提供的用来在Java对象和JSON数据之间进行映射的Java类库。
+       可以将一个Json字符转成一个Java对象，或者将一个Java转化为Json字符串。
+       特点： a、快速、高效  b、代码量少、简洁  c、面向对象  d、数据传递和解析方便
+       Serialization:序列化，使Java对象到Json字符串的过程。
+       Deserialization：反序列化，字符串转换成Java对象
 *note.008:
+    spring5（springboot2）开始用Caffeine缓存取代guava
+    参考文档地址：https://blog.csdn.net/qq_35981283/article/details/82354081
 *note.009:
+    Kafka:高吞吐量的分布式发布订阅消息系统，可以处理消费者规模的网站中的所有动作流数据。
+    这种动作（网页浏览，搜索和其他用户的行动）是在现代网络上的许多社会功能的一个关键因素。
+    这些数据通常是由于吞吐量的要求而通过处理日志和日志聚合来解决。
+    目的是通过Hadoop的并行加载机制来统一线上和离线的消息处理，也是为了通过集群来提供实时的消息。
+    参考文档地址：https://baike.baidu.com/item/Kafka/17930165?fr=aladdin
 *note.010:
 *note.011:
+*note.012:
+*note.013:
+*note.014:
+*note.015:
+*note.016:
+*note.017:
+*note.018:
+*note.019:
+*note.020:
+*note.021:
+*note.022:
+*note.023:
