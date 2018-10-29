@@ -11,10 +11,10 @@
 
     <properties>
 
-        <!--项目依赖的源码编码及输出编码 UTF-8-->
+        <!-- 项目依赖的源码编码及输出编码 UTF-8-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!--jdk及maven(*note.001)版本-->
+        <!-- jdk及maven(*note.001)版本-->
         <jdk.version>1.8</jdk.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -25,7 +25,8 @@
         <findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
         <maven.pmd.plugin.version>3.8</maven.pmd.plugin.version>
 
-        <!-- https://spring.io/projects/spring-boot#learn -->
+        <!-- https://spring.io/projects/spring-boot#learn 官方地址-->
+        <!-- 参考文档地址：https://www.cnblogs.com/quanxi/p/7147071.html 入手Spring Boot -->
         <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
         <!-- 跟随spring-boot升级 spring-core：spring框架中最低层核心的模块。提供了最基本的Ioc(*note.002)思想框架-->
         <spring.version>5.0.7.RELEASE</spring.version>
@@ -34,10 +35,10 @@
         <!-- https://github.com/apache/incubator-dubbo/releases 分布式服务框架-->
         <dubbo.version>2.6.2</dubbo.version>
         <!-- 跟随dubbo升级的 zookeeper -->
-        <!--<zkclient.version>0.10</zkclient.version>-->
-        <!--curator：分布式互斥锁(*note.004) -->
+        <!-- <zkclient.version>0.10</zkclient.version>-->
+        <!-- curator：分布式互斥锁(*note.004) -->
         <curator.version>2.12.0</curator.version>
-        <!-- 跟随spring-boot升级 netty-all (*note.005)-->
+        <!-- 跟随spring-boot升级 netty-all 异步通信、事件驱动  java网络编程框架 (*note.005)-->
         <netty.version>4.1.25.Final</netty.version>
 
         <!-- 跟随spring-boot升级 mysql-connector-java：是java通过JDBC连接操作mysql的官方驱动,解压后是jar包,需安装Java环境-->
@@ -47,14 +48,14 @@
         <!-- https://gitee.com/baomidou/mybatis-plus/releases  Mybatis的增强工具 -->
         <mybatisplus.version>2.2.0</mybatisplus.version>
         <!-- https://search.maven.org/search?q=g:com.baomidou%20AND%20a:mybatisplus-spring-boot-starter&core=gav -->
-        <!--为Mybatis-Plus快速集成spring-boot简化配置，补充了MyBatis短板，让 mybatis 兼具了 hibernate 的优点-->
+        <!-- 为Mybatis-Plus快速集成spring-boot简化配置，补充了MyBatis短板，让 mybatis 兼具了 hibernate 的优点-->
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
 
-        <!-- (*note.007) 1、跟随spring-boot升级 json解析器，jackson-core ，实现基本的序列化和反序列化 -->
+        <!-- (*note.007)1、跟随spring-boot升级 json解析器，jackson-core ，实现基本的序列化和反序列化 -->
         <jackson.version>2.9.6</jackson.version>
-        <!-- 2、https://search.maven.org/search?q=g:com.alibaba%20AND%20a:fastjson&core=gav -->
+        <!-- (*note.007)2、https://search.maven.org/search?q=g:com.alibaba%20AND%20a:fastjson&core=gav -->
         <fastjson.version>1.2.47</fastjson.version>
-        <!-- 3、跟随spring-boot升级 com.google.code.gson -->
+        <!-- (*note.007)3、跟随spring-boot升级 com.google.code.gson -->
         <gson.version>2.8.5</gson.version>
         <!-- https://search.maven.org/search?q=g:com.github.java-json-tools%20AND%20a:json-schema-validator&core=gav -->
         <!-- 自动校验方面的可用工具包中的json schema 定义、校验、修复json数据格式的解决方案。
@@ -75,45 +76,63 @@
         <!-- 异步，补充包，提供了对基本HTTP协议的健壮支持，基于异步事件驱动I/O模型构建HTTP感知客户端应用程序-->
         <http.async.client.version>4.1.3</http.async.client.version>
 
-        <!-- 跟随spring-boot升级 validation-api -->
+        <!-- 跟随spring-boot升级 validation-api 参考文档地址：https://blog.csdn.net/zalan01408980/article/details/79059434-->
+        <!-- 开发JAVA服务器端代码，需要对外部传来的参数合法性进行验证。hibernate-validator提供了一些常用的参数校验注解-->
         <validation.api.version>2.0.1.Final</validation.api.version>
         <!-- 跟随spring-boot升级 hibernate-validator -->
         <hibernate.validator.version>6.0.10.Final</hibernate.validator.version>
 
         <!-- https://search.maven.org/search?q=g:com.google.guava%20AND%20a:guava&core=gav -->
+        <!-- 基于开源的Java库，其中包含谷歌正在由他们很多项目使用的很多核心库。为了方便编码，并减少编码错误。
+        提供用于集合，缓存，支持原语，并发性，常见注解，字符串处理，I/O和验证的实用方法。-->
         <guava.version>25.1-jre</guava.version>
         <!-- 跟随spring-boot升级 org.apache.commons -->
+        <!-- 提供了这些额外的方法来操作其核心类。特别是字符串操作方法、基本数值方法、对象反射、并发性、创建和序列化以及系统属性。
+        它还包含对java.util.Date的基本增强，以及一系列专门用于帮助构建方法的实用程序，如hashCode、toString和Equals。-->
         <commons.lang3.version>3.7</commons.lang3.version>
-        <!-- https://search.maven.org/search?q=g:commons-io%20AND%20a:commons-io&core=gav -->
+        <!-- https://search.maven.org/search?q=g:commons-io%20AND%20a:commons-io&core=gav
+        实用程序库，帮助开发IO(输入/输出)功能-->
         <commons.io.version>2.6</commons.io.version>
-        <!-- 跟随spring-boot升级 org.apache.commons -->
+        <!-- 跟随spring-boot升级 org.apache.commons 对对象池化操作进行了很好的封装，使我们只需要根据业务需求重写或实现部分接口-->
+        <!-- 参考文档地址：https://blog.csdn.net/u011277123/article/details/53943351/-->
         <commons.pool2.version>2.5.0</commons.pool2.version>
-        <!-- 跟随spring-boot升级 commons-codec -->
+        <!-- 跟随spring-boot升级 commons-codec 提供常用编码器和解码器的实现，如base 64、十六进制、Phonetic和URL。-->
         <commons.codec.version>1.11</commons.codec.version>
         <!-- https://search.maven.org/search?q=g:org.apache.commons%20AND%20a:commons-collections4&core=gav -->
+        <!-- 包中定义了由其他包实现的接口、作为工厂类(可以实例化集合类或者集合的封装类)的共通类-->
+        <!-- 参考文档地址：https://blog.csdn.net/jiutianhe/article/details/19199573 交集、计数、迭代、逻辑和类型强制转换操作等-->
         <commons.collections4.version>4.1</commons.collections4.version>
+        <!-- commons.email提供一个发送电子邮件的API。构建在JavaMailAPI之上，简化-->
         <commons.email.version>1.5</commons.email.version>
 
-        <!-- http://springfox.github.io/springfox/ -->
+        <!-- (*note.010)1、http://springfox.github.io/springfox/ Springfox与swagger的整合使用-->
         <springfox.version>2.6.1</springfox.version>
-        <!-- https://mvnrepository.com/artifact/io.swagger/swagger-annotations -->
+        <!-- (*note.010)2、https://mvnrepository.com/artifact/io.swagger/swagger-annotations @Api、@ApiOperation等注解 -->
         <swagger.annotations.version>1.5.10</swagger.annotations.version>
 
         <!-- https://search.maven.org/search?q=g:org.apache.velocity%20AND%20a:velocity-engine-core&core=gav -->
+        <!-- 基于Java的模板引擎。允许任何人使用模板语言来引用Java代码中定义的对象 参考文档地址：http://velocity.apache.org/-->
         <velocity.version>2.0</velocity.version>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.shiro/shiro-core Java安全框架,执行身份验证、授权、密码和会话管理-->
         <shiro.version>1.4.0</shiro.version>
-        <!-- https://mvnrepository.com/artifact/org.crazycake/shiro-redis -->
+        <!-- https://mvnrepository.com/artifact/org.crazycake/shiro-redis (*note.011) 使用shiro-redis集群 -->
         <shiro.redis.version>2.4.2.1-RELEASE</shiro.redis.version>
 
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <!-- jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。爬虫
+        它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。-->
         <jsoup.version>1.11.3</jsoup.version>
         <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter-basic -->
+        <!-- activiti：业务流程管理（BPM）框架，它是覆盖了业务流程管理、工作流、服务协作等领域的一个开源的可执行流程语言框架。-->
+        <!-- 参考文档地址：https://blog.csdn.net/zezezuiaiya/article/details/78121663-->
+        <!-- 暂时未用到-->
         <activiti.version>5.22.0</activiti.version>
         <!-- https://mvnrepository.com/artifact/cn.afterturn/easypoi-base -->
+        <!-- 不懂导入导出也能快速使用poi完成Excel和word的各种操作 参考文档地址：http://easypoi.mydoc.io/#text_186905-->
         <easypoi.version>3.0.3</easypoi.version>
-        <!-- https://mvnrepository.com/artifact/org.jdom/jdom -->
+        <!-- https://mvnrepository.com/artifact/org.jdom/jdom 通过 Java 代码来访问、操作并输出 XML 数据 ；Document -->
+        <!-- JDOM是一种使用 XML（标准通用标记语言下的一个子集） 的独特 Java 工具包，它的设计包含 Java 语言的语法乃至语义。-->
         <jdom.version>2.0.2</jdom.version>
 
     </properties>
@@ -701,6 +720,7 @@
     </build>
 
     <repositories>
+        <!-- 开发热部署-->
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>

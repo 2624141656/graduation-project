@@ -41,7 +41,21 @@
     目的是通过Hadoop的并行加载机制来统一线上和离线的消息处理，也是为了通过集群来提供实时的消息。
     参考文档地址：https://baike.baidu.com/item/Kafka/17930165?fr=aladdin
 *note.010:
+    Springfox与swagger的整合使用
+    1、一个基于Spring的组件swagger-springmvc，用于将swagger集成到springmvc中来。
+       而springfox则是从这个组件发展而来，同时springfox也是一个新的项目。
+       pringfox-swagger2依然是依赖OSA规范文档，也就是一个描述API的json文件，该组件的功能就是帮助自动生成这个json文件，
+       *另外一个组件springfox-swagger-ui就是将这个json文件解析出来，用一种更友好的方式呈现出来。
+    2、Swagger 是一个流行的API开发框架，这个框架以“开放API声明”（OpenAPI Specification，OAS）为基础，
+       对整个API的开发周期都提供了相应的解决方案，是一个非常庞大的项目（包括设计、编码和测试，几乎支持所有语言）。
+       OAS本身是一个API规范，它用于描述一整套API接口，包括一个接口是GET还是POST请求啊，有哪些参数哪些header等，都会被包括在这个文件中。
+       它在设计的时候通常是YAML格式，这种格式书写起来比较方便，而在网络中传输时又会以json形式居多，因为json的通用性比较强。
+       参考文档地址：https://www.cnblogs.com/getupmorning/p/7267076.html
+                    https://blog.csdn.net/wsh900221/article/details/80508548
 *note.011:
+    使用shiro-redis集群
+    使用了nginx做项目集群以后，就会出现严重问题：tomcat集群之间如何实现session共享的问题.不解决，就会出现登陆过后再次请求资源依旧需要登陆的问题
+    spring和shiro集成：参考文档地址：http://www.cnblogs.com/hafiz/p/7226388.html
 *note.012:
 *note.013:
 *note.014:
