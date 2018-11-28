@@ -9,9 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic</artifactId>
-    <!--打开刚创建的basic工程下的此文件，添加jar，这样maven会把该工程打成jar包-->
-    <packaging>jar</packaging>
+    <artifactId>build-tools</artifactId>
 
 
 </project>

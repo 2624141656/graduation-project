@@ -9,6 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>basic</module>
+        <module>build-tools</module>
+    </modules>
+
     <properties>
 
         <!-- 项目依赖的源码编码及输出编码 UTF-8-->
@@ -136,10 +141,6 @@
         <jdom.version>2.0.2</jdom.version>
 
     </properties>
-
-    <modules>
-        <module>basic</module>
-    </modules>
 
     <dependencyManagement>
         <dependencies>

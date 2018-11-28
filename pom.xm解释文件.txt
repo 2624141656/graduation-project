@@ -68,3 +68,17 @@
 *note.021:
 *note.022:
 *note.023:
+
+英语词汇
+
+basic   基本
+gateway 网关
+config  配置
+portal  入口
+build-tools  工具
+
+ak 公钥  ak解析
+sk 秘钥  不在网络中传输(安全性)
+timestamp
+sign 签名 = md5(ak + timestamp)
+
