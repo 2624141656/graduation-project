@@ -82,3 +82,13 @@ sk 秘钥  不在网络中传输(安全性)
 timestamp
 sign 签名 = md5(ak + timestamp)
 
+Add Xsi(xml schema instance) schema location for external resource  为外部资源添加Xsi（xml架构实例）架构位置
+Fetch\Ignore\Manually external resource  获取外部资源\忽略外部资源\手动设置外部资源
+
+web-app是web.xml的根节点标签名称
+version是版本的意思
+xmlns是web.xml文件用到的命名空间
+xmlns:xsi是指web.xml遵守xml规范
+xsi:schemaLocation是指具体用到的schema资源
+不要看相关中文资料，看了就不明白了，schema就是schema你把他翻译成对文档的限制就行了。你可能会说，dtd才是，实际上xsd和dtd是一样的
+
